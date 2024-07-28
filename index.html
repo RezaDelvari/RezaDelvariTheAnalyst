@@ -102,7 +102,21 @@
 									</style>
 									<button type="submit"><a href="https://github.com/RezaDelvari/SQLandPowerBI"></a>View on Github</a></button>
 								
-								
+
+									
+
+									<span class="image main"><img src="images\3.1.png" alt="" /></span>
+									<h2>Shopping Customer Segmentation<h2>
+									<h3>This project focuses on customer segmentation for a shopping mall using unsupervised machine learning techniques, specifically K-means clustering. The analysis begins with exploratory data analysis (EDA) of customer attributes such as age, annual income, and spending score. The project then applies K-means clustering in three stages: univariate clustering on annual income, bivariate clustering on income and spending score, and multivariate clustering incorporating age and gender as well. Through visualization and statistical analysis of the resulting clusters, the project identifies key customer segments, including a high-value target group (cluster 1) with high income and high spending scores, comprising 60% women. The insights derived from this segmentation can guide marketing strategies, helping the mall's marketing team to plan targeted campaigns and potentially capitalize on opportunities like special sales events for specific customer groups.<h3>
+										<button type="submit" class="margin-right"><a href="#project2">View Project</a></button>
+										<style>
+										  .margin-right{
+										  margin-right: 15px;
+										  }
+										</style>
+									<button type="submit"><a href="https://github.com/RezaDelvari/Customer-Segmentation-Clustering">View on Github</a></button>
+									
+																	
 								
 								</body>
 								</html>
@@ -278,6 +292,104 @@
 										</li>
 									</ul>
 								</p>
+							  </article>
+
+
+
+							  <article id="project2">
+								<header><h2>Welcome to Unsupervised Machine Learning Project</h2></header>
+								
+								
+								<span class="image main"><img src="images\3.3.png" alt="" /></span>
+								<p>
+									<h1>Shopping Customer Segmentation</h1>
+									<h3>Unsupervised Machine Learning Project</h3>
+								
+									<h2>Problem Statement</h2>
+									<p>Understand the target customers for the marketing team to plan a strategy.</p>
+								
+									<h2>Context</h2>
+									<ul>
+										<li>Identify the most important shopping groups based on income, age, and the mall shopping score.</li>
+										<li>The number of groups with a label for each.</li>
+									</ul>
+								
+									<h2>Objective Market Segmentation</h2>
+									<p>Divide a target market into approachable groups. Create subsets of a market based on demographic and behavioral criteria to better understand the target for marketing activities.</p>
+								
+									<h2>The Approach</h2>
+									<ol>
+										<li>Perform EDA</li>
+										<li>Use KMEANS Clustering Algorithm to create our segments</li>
+										<li>Use Summary Statistic on the clusters</li>
+										<li>Visualization</li>
+									</ol>
+								
+									<h2>Jupyter Notebook Details</h2>
+								
+									<h3>Import Libraries</h3>
+									<code>
+								import pandas as pd
+								import seaborn as sns
+								import matplotlib.pyplot as plt
+								from sklearn.cluster import KMeans
+								import warnings
+								warnings.filterwarnings('ignore')
+									</code>
+								
+									<h3>Load Dataset</h3>
+									<code>
+								# Load the dataset from a CSV file
+								df = pd.read_csv("Mall_Customers.csv")
+								df.head()
+									</code>
+								
+									<h3>Univariate Analysis</h3>
+									<p>Generate descriptive statistics and visualize distributions of Age, Annual Income, and Spending Score.</p>
+								
+									<h3>Bivariate Analysis</h3>
+									<p>Visualize distributions and relationships between features by gender using KDE plots and box plots.</p>
+								
+									<h3>Correlation Analysis</h3>
+									<p>Calculate and visualize the correlation matrix.</p>
+								
+									<h3>Clustering</h3>
+									<h4>Univariate Clustering</h4>
+									<p>Perform KMeans clustering on Annual Income.</p>
+								
+									<h4>Bivariate Clustering</h4>
+									<p>Perform KMeans clustering on Annual Income and Spending Score.</p>
+								
+									<h4>Multivariate Clustering</h4>
+									<p>Perform KMeans clustering on scaled features including Age, Annual Income, Spending Score, and Gender.</p>
+								
+									<h3>Cluster Analysis</h3>
+									<p>Analyze clusters to identify target groups for marketing strategies.</p>
+								
+									<h4>Target Cluster:</h4>
+									<ul>
+										<li>Target group would be cluster 1 which has a high spending score and high income.</li>
+										<li>60% of cluster 1 shoppers are women. Marketing campaigns should focus on popular items in this cluster.</li>
+										<li>Cluster 4 presents an interesting opportunity for sales events targeting the customers.</li>
+									</ul>
+								
+									<h2>Usage</h2>
+									<ol>
+										<li><strong>Exploratory Data Analysis (EDA)</strong>: Understand the dataset and visualize distributions.</li>
+										<li><strong>Clustering</strong>: Apply KMeans clustering algorithm to segment customers.</li>
+										<li><strong>Visualization</strong>: Plot the clusters to interpret the segments.</li>
+										<li><strong>Analysis</strong>: Analyze the clusters to derive insights for marketing strategies.</li>
+									</ol>
+								
+									<h2>Requirements</h2>
+									<ul>
+										<li>pandas</li>
+										<li>seaborn</li>
+										<li>matplotlib</li>
+										<li>scikit-learn</li>
+									</ul>
+								
+									
 							  </article>
 
 						<!-- Elements -->
